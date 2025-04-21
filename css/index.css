@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+@import url(header.css);
+@import url(footer.css);
+
+/*  폰트
+1) merriweather 폰트 (영문)
+    font-family: "Merriweather", serif;
+    font-weight: 300 ~ 900;
+
+2) nanum gothic 폰트 (한글)
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 400 | 700 | 800;
+*/
+
+
+
+/* main ************************************************************************* */
+main {
+    margin-top: 140px;
+    width: 100%;
+    margin-bottom: 80px;
+}
+main .promotion {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 700px;
+    background: url(../img/main_forest.jpg) no-repeat center top/cover;
+}
+main .promotion a {
+    height: 100%;
+    width: 100%;
+    font-size: 0;
+}
+main .event {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+main .event img {
+    width: 100%;
+    display: block;
+}
+
+/* section ************************************************************** */
+
+article.md-pick {
+    width: 1280px;
+    margin: 0 auto 100px;
+}
+
+.md-pick .md-wrap {
+    text-align: center;
+}
+
+.md-pick .md-wrap .md-box {
+    float: left;
+    width: 25%;
+}
+
+.md-box .photo {
+    margin-bottom: 30px;
+    position: relative;
+}
+.md-box .photo img {
+    width: 100%;
+    display: block;
+}
+.md-box .photo a.quick {
+    background-color: rgb(243, 130, 0);
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1.2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20%;
+    display: none;
+    /* 위치잡기 
+    top: 50%;
+    transform: translate(-50%, -50%); */
+}
+.md-box .photo:hover img {
+    opacity: 0.4;
+}
+.md-box .photo:hover a.quick {
+    display: inline-block;
+}
+
+.md-box .caption {
+    padding: 0 5%;
+}
+.md-box .caption h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.md-box .caption p {
+    margin-bottom: 10px;
+}
+
+.md-box .caption p.price {
+    color: rgb(207, 102, 26);
+    font-weight: 700;
+}
+
+
+article.new {
+    width: 1280px;
+    margin: 0 auto 100px;
+}
+
+article.new .new-box {
+    float: left;
+    width: 32%;
+}
+article.new .new-box ~ .new-box {
+    margin-left: 2%;
+}
+
+article.new .new-box > a  {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+article.new .new-box > a img {
+    width: 100%;
+    display: block;
+    transition: all 0.5s;
+}
+
+article.new .new-box > a:hover img {
+    transform: scale(1.5);
+}
+
+article.new .new-box h3 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+}
+article.new .new-box h3 a {
+    color: rgb(207, 102, 26);
+}
+
+article.instagram {
+    width: 100%;
+    background-color: rgb(124,81,161);
+    padding: 60px 0;
+    /* text-align: center; */
+}
+article.instagram .sec-title {
+    color: rgb(255, 255, 255);
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+article.instagram .thumb-list {
+    margin-bottom: 50px;
+}
+article.instagram .thumb-list li {
+    width: 16.66%;
+    overflow: hidden;
+}
+
+article.instagram .thumb-list li a img {
+    width: 100%;
+    display: block;
+    transition: all 0.5s;
+}
+article.instagram .thumb-list li:hover img {
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+
+article.instagram .follow-btn {
+    background-color: rgb(243, 130, 0);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Merriweather", serif;
+    display: inline-block;
+    padding: 10px 20px;
+
+    /* 버튼위치 조절 */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+article.instagram .follow-btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(243, 130, 0);
+}

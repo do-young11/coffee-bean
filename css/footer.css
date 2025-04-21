@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/* footer ************************************************* */
+
+footer {
+    width: 100%;
+    background-color: lightgray;
+    padding: 60px 0;
+}
+
+footer a {
+    color: #333;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .sitemap {
+    margin-bottom: 30px;
+}
+.sitemap .mapbox {
+    float: left;
+    width: 16.66%;
+}
+.sitemap .mapbox h3 {
+    font-size: 18px;
+    color: rgb(207, 102, 26);
+    font-family: "Merriweather", serif;
+    margin-bottom: 20px;
+}
+
+.sitemap .mapbox ul li {
+    float: none;
+    line-height: 30px;
+}
+
+footer .info {
+    border-top: 1px solid #999;
+    padding-top: 30px;
+    position: relative;
+}
+
+.info .links {
+    margin-bottom: 20px;
+}
+.info .links a {
+    display: inline-block;
+    margin-right: 8px;
+    position: relative; /* 가상요소의 기준 */
+    padding-right: 10px;
+}
+/* .info .links a~a::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: #333;
+    position: absolute;
+    left: -4%;
+    top: 4px;
+}  */
+.info .links a::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: #333;
+    position: absolute;
+    left: 100%;
+    top: 4px;
+}
+.info .links a:last-child::after {
+    display: none;
+}
+
+.info .sns {
+    position: absolute;
+    right: 0;
+    top: 31px;
+}
+.info .sns a {
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    float: left;
+    margin-left: 10px;
+}
+.info .sns a img {
+    width: 100%;
+    display: block;
+    opacity: 0.9;
+}
+.info .sns a img:hover {
+    opacity: 1;
+}
+/* sns아이콘을 배경이미지로 넣기 */
+.info .sns a:nth-child(2) {
+    background-image: url(../img/ico_sns.png);
+    background-position: -40px;
+    opacity: 0.9;
+}
+.info .sns a:nth-child(2):hover {
+    opacity: 1;
+}
+.info .sns a:nth-child(3) {
+    background-image: url(../img/ico_blog_hover.png);
+}
+.info .sns a:nth-child(3):hover {
+    background-position: right;
+}
+.info .sns a:nth-child(4) {
+    background-image: url(../img/ico_twitter_hover.png);
+}
+.info .sns a:nth-child(4):hover {
+    background-position: right;
+}

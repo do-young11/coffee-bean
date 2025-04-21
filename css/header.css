@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+/* header.css ************************************************ */
+
+header {
+    width: 100%;
+    background-color: rgba(255, 255, 255,0.9);
+    /* border-bottom: 1px solid #eee; */
+    box-shadow: 0 2px 8px #eee;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+header a { /* header 하위의 모든 a 태그 */
+    color: #333;
+}
+
+header .header-top {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: lightgray;
+}
+header .header-top ul {
+    width: 1280px;
+    margin: 0 auto;
+    text-align: right;
+}
+header .header-top ul li {
+    float: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+header .header-top ul li:last-child a {
+    background: rgb(47,28,17) url(../img/ico_user_info_line.png) no-repeat center;
+    width: 60px;
+    height: 40px;
+    /* font-size: 0; */
+    /* opacity: 0; 안보이지만 공간은 유지 */
+    text-indent: -9999px;
+    text-align: left;
+}
+header .header-top ul li a {
+    color: rgb(47,28,17);
+}
+
+header .header-bottom {
+    width: 1280px;
+    margin: 0 auto;
+    height: 100px;
+}
+
+.header-bottom .logo {
+    float: left;
+    margin-right: 50px;
+    height: 100%;
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+.header-bottom .logo img {
+    height: 70px;
+    display: block;
+}
+.header-bottom .gnb {
+    float: left;
+}
+.header-bottom .gnb li {
+    margin: 0 20px;
+}
+.header-bottom .gnb li a {
+    line-height: 100px;
+    font-size: 18px;
+    font-family: Arial;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(47,28,17);
+}
+.header-bottom .gnb li.active a {
+    color: rgb(207, 102, 26);
+}
+.header-bottom .gnb li a:hover {
+    color: rgb(207, 102, 26);
+}
+.header-bottom .search {
+    float: right;
+    height: 100%;
+}
+.search input {
+    border: none;
+    outline: none;
+    height: 30px;
+    margin-top: 35px;
+    vertical-align: middle;
+}
+
+.search input[type="search"] {
+    border-bottom: 1px solid #ccc;
+}
+
+.search input[type="submit"] {
+    background: transparent url(../img/ico_search.png) no-repeat right;
+    font-size: 0;
+    width: 24px;
+    cursor: pointer;
+}
